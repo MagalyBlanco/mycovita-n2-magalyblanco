@@ -1,0 +1,15 @@
+
+//BASE
+@use '../base/funcionalidades';
+@use '../base/generales';
+@use '../base/queries';
+
+// COMPONENTS
+@use './body';
+@use './navbar';
+@use './main';
+@use './productos';
+@use './header';
+@use './hero';
+@use './pages';
+@use './footer';

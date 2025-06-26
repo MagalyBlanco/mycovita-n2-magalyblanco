@@ -1,0 +1,19 @@
+{
+  "name": "mycovita-n2-magalyblanco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagalyBlanco/mycovita-n2-magalyblanco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagalyBlanco/mycovita-n2-magalyblanco/issues"
+  },
+  "homepage": "https://github.com/MagalyBlanco/mycovita-n2-magalyblanco#readme",
+  "description": ""
+}

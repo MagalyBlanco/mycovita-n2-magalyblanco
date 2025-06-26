@@ -1,0 +1,46 @@
+
+.img-hongo img {
+  width: 100%;
+  height: 500px;
+}
+
+.hero h2,
+.hero h3 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/img-hongoprincipal);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenido-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1.5;
+}
+
+.contenido-hero h2 {
+  font-family: 'Galindo', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 20%;
+}
+
+.contenido-hero h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.5;
+}

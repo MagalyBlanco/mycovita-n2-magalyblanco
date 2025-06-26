@@ -1,0 +1,15 @@
+
+body {
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  display: inline-block;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.5); // un pequeño zoom
+  }
+}

@@ -1,0 +1,16 @@
+
+@media (max-width: 576px) {
+  .search-container {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .navbar-collapse {
+    justify-content: center !important;
+  }
+
+  .navbar-nav > li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}

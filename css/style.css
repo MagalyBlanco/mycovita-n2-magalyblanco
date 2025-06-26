@@ -1,301 +1,155 @@
-/* Selector - Propiedad - Valor
-
-selector { 
-
-propiedad : valor
-}
-
-*/
-
-/* la P hace q todos los Parrafos de nuestro hlml se pongan en el color que mencionamos*/
-
-
-/*p {
-   /* color: brown; */
-/* nombre de color: hexadecimal, rgb, rgba */
-/* color: rgb(0, 0, 255); */
-
-/*color: rgba(0, 0, 255, 0.5);*/
-
-/*unidades de medidas: px / em / rem / % */
-/*font: size 80px;;
-    margin: 50px;
-    
-    }
-    */
-
-/* el . hace que nos vinculemos con el html, asi no pintamos toda una seccion sino lo q marcamos con CLASS en html*/
-
-/*
-.hero h1 {
-
-  color: rgb(12, 226, 30);
-} */
-
-
-
-/* ----------------------------------------------------- */
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-/* --------------------------- BODY --------------------------- */
 body {
   background-color: #f0f0f0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-/* --------------------------- HEADER --------------------------- */
-header {
-  background-color: #f0f0f0;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-} 
+h2, h3 {
+  font-family: "Galindo", cursive;
+}
 
-.nav-contenido {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
+@media (max-width: 576px) {
+  .search-container {
+    width: 100%;
+    max-width: 250px;
+  }
+  .navbar-collapse {
+    justify-content: center !important;
+  }
+  .navbar-nav > li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+body {
+  background-color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
 }
 
 .logo {
-  font-size: 35px;
-  font-weight: bold;
-  color: #4b2600;
-  margin: 0;
+  display: inline-block;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.5);
 }
 
-/* Espacio entre los links del menú principal */
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  color: #331a00 !important;
+}
+
 .navbar-nav > li {
-  margin-right: 1.3rem; /* espacio entre cada link */
+  margin-right: 1.3rem;
 }
 
 .navbar-nav > li:last-child {
-  margin-right: 0; /* que no quede margen al final */
+  margin-right: 0;
 }
 
-/* Contenedor del buscador */
 .search-container {
   position: relative;
-  width: 170px; /* ancho fijo para que no se achique */
+  width: 170px;
 }
 
 .search-input {
-  padding-right: 2.5rem; /* espacio para el ícono */
+  padding-right: 2.5rem;
 }
 
-/* Icono de lupa dentro del input */
 .search-icon {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: #7a7a7a;
-  pointer-events: none; /* que no moleste al hacer click en el input */
+  pointer-events: none;
 }
 
-/* Ajustes para que el buscador y carrito estén bien alineados */
 .d-flex.align-items-center {
   gap: 1rem;
 }
 
-/* Responsive - para pantallas chicas, que el buscador quede completo y no se achique */
 @media (max-width: 576px) {
   .search-container {
     width: 100%;
     max-width: 250px;
   }
-
   .navbar-collapse {
     justify-content: center !important;
   }
-
-  /* Separar  */
   .navbar-nav > li {
     margin-right: 1rem;
     margin-bottom: 0.5rem;
   }
 }
-
-/* NAVBAR sin fondo, solo texto marrón */
 .navbar {
   background-color: transparent;
 }
 
-/* Links del menú principal */
 .navbar-nav .nav-link {
   color: #4b2600 !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Hover en los links */
 .navbar-nav .nav-link:hover {
   color: #331a00 !important;
 }
 
-/* Dropdown: sin fondo, texto marrón */
 .navbar-nav .dropdown-menu {
   background-color: transparent;
   border: none;
   box-shadow: none;
-}
-
-/* Items del dropdown */
-.dropdown-menu .dropdown-item {
-  color: #4b2600 !important;
-  transition: color 0.3s ease;
-}
-
-/* Hover en items del dropdown */
-.dropdown-menu .dropdown-item:hover {
-  color: #331a00 !important;
-  background-color: transparent !important;
-}
-
-/* Fondo clarito para el dropdown */
-.navbar-nav .dropdown-menu {
-  background-color: #f0e6dc; /* color tipo beige claro */
-  border: none;
-  box-shadow: none;
+  background-color: #f0e6dc;
   padding: 0.5rem 0;
   border-radius: 8px;
 }
 
-/* Items del dropdown */
 .dropdown-menu .dropdown-item {
   color: #4b2600 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
   padding: 0.5rem 1rem;
 }
 
-/* Hover sobre items del dropdown */
 .dropdown-menu .dropdown-item:hover {
   color: #331a00 !important;
-  background-color: #e2d2c3 !important; /* un tono más oscuro del fondo */
+  background-color: #e2d2c3 !important;
 }
 
-/* Estilo por defecto del icono hamburguesa */
 .navbar-toggler {
   border: none;
   background-color: #ddd;
 }
 
-/* Cambia el color del icono (las rayitas) */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%234b2600' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(75,38,0, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   transition: filter 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover o focus: se oscurece */
 .navbar-toggler:hover .navbar-toggler-icon,
 .navbar-toggler:focus .navbar-toggler-icon {
   filter: brightness(70%);
   transform: scale(1.05);
 }
 
-/* --------------------------- HEADER TEXTOS --------------------------- */
-header main section h1 {
-  color: rgb(65, 30, 3);
-  font-family: 'Poppins', sans-serif;
-  text-align: left;
-  font-size: 40px;
-}
-
-h2,
-h3 {
-  font-family: 'Galindo', cursive;
-}
-
-.Bienvenida h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #4b2600;
-  text-align: center;
-  margin: 40px auto 20px auto;
-}
-
-.Bienvenida p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  color: #4b2600;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 60px auto;
-  padding: 0 20px;
-  line-height: 1.6;
-}
-
-/* --------------------------- HERO --------------------------- */
-.img-hongo img {
-  width: 100%;
-  height: 500px;
-}
-
-.hero h2,
-.hero h3 {
-  color: white;
-  /*Color de texto*/
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  /* sombra negra */
-}
-
-.hero {
-  width: 100%;
-  height: 400px;
-  background-image: url(../img/img-hongoprincipal);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.contenido-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 1;
-}
-
-.contenido-hero h2 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 2.5rem;
-  margin: 0;
-  line-height: 1.2;
-  margin-bottom: 25%;
-}
-
-.contenido-hero h3 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5rem;
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* --------------------------- MAIN --------------------------- */
 main section h2,
 main section h3 {
   background-color: transparent;
   color: rgb(29, 16, 0);
-  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 40px;
 }
-
 main section h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #4b2600;
@@ -304,23 +158,20 @@ main section h4 {
   text-align: center;
   padding: 60px 20px;
 }
-
-.productos-compra h1 {
+main .productos-compra h1 {
   background-color: #f0f0f0;
   color: rgb(65, 30, 3);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: left;
   font-size: 20px;
 }
-
-.pro-pre p {
+main .pro-pre p {
   color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: left;
   font-size: 15px;
 }
 
-/* ------------------ PRODUCTOS DESTACADOS ------------------ */
 .productos {
   margin-top: 50px;
   padding: 20px;
@@ -331,7 +182,7 @@ main section h4 {
   font-size: 2rem;
   color: #532e10;
   margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .contenedor-productos {
@@ -386,10 +237,117 @@ main section h4 {
   background-color: #7a4b27;
 }
 
-/*----------------------------PAGES------------------------*/
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
+.nav-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #4b2600;
+  margin: 0;
+  font-family: "Galindo", cursive;
+}
+
+/* HEADER TEXTOS */
+header main section h1 {
+  color: rgb(65, 30, 3);
+  font-family: "Galindo", cursive;
+  text-align: left;
+  font-size: 40px;
+}
+
+h2,
+h3 {
+  font-family: "Galindo", cursive;
+}
+
+.Bienvenida h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #4b2600;
+  text-align: center;
+  margin: 40px auto 20px auto;
+}
+
+.tarjeta-bienvenida {
+  background-color: #ddd7c7;
+  padding: 30px;
+  margin: 100px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  transition: margin 0.3s ease-in-out;
+}
+.tarjeta-bienvenida:hover {
+  margin: 35px;
+}
+
+.img-hongo img {
+  width: 100%;
+  height: 500px;
+}
+
+.hero h2,
+.hero h3 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/img-hongoprincipal);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenido-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1.5;
+}
+
+.contenido-hero h2 {
+  font-family: "Galindo", cursive;
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.2;
+  margin-bottom: 20%;
+}
+
+.contenido-hero h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/*----------------------------PAGES------------------------*/
 .subtitulo-seccion {
-  color: #7f8109;
+  color: #553103;
   text-align: left;
   margin: 15px;
   max-width: 800px;
@@ -446,14 +404,14 @@ iframe {
   width: 100%;
   max-width: 650px;
   /*más chica o más grande */
-  height: auto border-radius: 10px;
+  height: auto;
+  border-radius: 10px;
   /* para esquinas redondeadas */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   /*para que se vea prolija */
 }
 
 /* ----------pages-> CONTACTO--------------------------- */
-
 .formulario-contacto {
   max-width: 600px;
   margin: 30px auto;
@@ -508,7 +466,6 @@ iframe {
 }
 
 /* --------------------------- TOP 5 HONGOS -- CARDS--  GRIDS Y FLEXBOX --------------------------- */
-
 .grid-container {
   /*display: grid;
   grid-template-columns: 1fr; */
@@ -527,7 +484,6 @@ padding y border-radius: para dar aire y bordes redondeados.
 box-shadow: para dar efecto de "tarjeta".
 
 img: le ponés ancho máximo, que no se pase, y un poco de margen.*/
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -544,6 +500,13 @@ img: le ponés ancho máximo, que no se pase, y un poco de margen.*/
   flex-direction: column;
   align-items: center;
   transition: transform 0.2s ease-in-out;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -570,13 +533,11 @@ img: le ponés ancho máximo, que no se pase, y un poco de margen.*/
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .card:first-child {
     grid-column: span 2;
     /* La primera tarjeta ocupa todo el ancho */
   }
 }
-
 .card {
   position: relative;
   /* Necesario para que el número se posicione dentro */
@@ -600,51 +561,42 @@ img: le ponés ancho máximo, que no se pase, y un poco de margen.*/
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
-
-
-
-
-
-/* --------------------------- FOOTER --------------------------- */
-
 footer {
   background-color: #f5f5f5;
   padding: 20px;
 }
-
-.footer-contenedor {
+footer .footer-contenedor {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
-.redes-sociales {
+footer .footer-contenedor p {
+  color: #4b2600;
+  font-size: 0.9rem;
+}
+footer .redes-sociales {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 10px;
 }
-
-.redes-sociales a {
+footer .redes-sociales a {
   display: flex;
   align-items: center;
   color: #4b2600;
   text-decoration: none;
   font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
-
-.redes-sociales img {
+footer .redes-sociales a:hover {
+  transform: scale(1.1);
+}
+footer .redes-sociales a img {
   width: 20px;
   height: 20px;
   margin-right: 8px;
   object-fit: contain;
 }
 
-.footer-contenedor p {
-  color: #4b2600;
-  font-size: 0.9rem;
-}
+/*# sourceMappingURL=style.css.map */

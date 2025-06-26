@@ -1,0 +1,71 @@
+
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #4b2600;
+  margin: 0;
+  font-family: 'Galindo', cursive;
+}
+
+/* HEADER TEXTOS */
+
+header main section h1 {
+  color: rgb(65, 30, 3);
+  font-family: 'Galindo', cursive;
+  text-align: left;
+  font-size: 40px;
+}
+ // TARJETA BIENVENIDA // 
+ 
+h2,
+h3 {
+  font-family: 'Galindo', cursive;
+}
+
+.Bienvenida h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #4b2600;
+  text-align: center;
+  margin: 40px auto 20px auto;
+}
+
+.tarjeta-bienvenida {
+  background-color: #ddd7c7;
+  padding: 30px;
+  margin: 100px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block;
+  transition: margin 0.3s ease-in-out;
+
+  &:hover {
+    margin: 35px;
+  }
+}
+
+
+
+
+
+
