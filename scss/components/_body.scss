@@ -6,10 +6,11 @@ body {
 
 .logo {
   display: inline-block;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
-
-  &:hover {
-    transform: scale(1.5); // un pequeño zoom
-  }
 }
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
