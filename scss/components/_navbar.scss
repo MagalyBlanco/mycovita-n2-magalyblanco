@@ -3,7 +3,7 @@
 
   &:hover {
     transform: scale(1.1);
-    color: #331a00 !important; // Ya tenés este color en hover, lo mantenemos
+    color: #331a00 !important; 
   }
 }
 
@@ -29,7 +29,7 @@
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #7a7a7a;
+  color: #fcfcfc;
   pointer-events: none;
 }
 
@@ -71,7 +71,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  background-color: #7a7a7a;
+  background-color: #fcfcfc;
   padding: 0.5rem 0;
   border-radius: 8px;
 }
@@ -84,12 +84,12 @@
 
 .dropdown-menu .dropdown-item:hover {
   color: #331a00 !important;
-  background-color: #e2d2c3 !important;
+  background-color: #fcfcfc !important;
 }
 
 .navbar-toggler {
   border: none;
-  background-color: #7a7a7a;
+  background-color: #fcfcfc;
 }
 
 .navbar-toggler-icon {

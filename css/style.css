@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
   font-family: "Poppins", sans-serif;
 }
 
@@ -27,7 +27,7 @@ h2, h3 {
   }
 }
 body {
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
   font-family: "Poppins", sans-serif;
 }
 
@@ -71,7 +71,7 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #7a7a7a;
+  color: #fcfcfc;
   pointer-events: none;
 }
 
@@ -110,7 +110,7 @@ body {
   background-color: transparent;
   border: none;
   box-shadow: none;
-  background-color: #7a7a7a;
+  background-color: #fcfcfc;
   padding: 0.5rem 0;
   border-radius: 8px;
 }
@@ -123,12 +123,12 @@ body {
 
 .dropdown-menu .dropdown-item:hover {
   color: #331a00 !important;
-  background-color: #e2d2c3 !important;
+  background-color: #fcfcfc !important;
 }
 
 .navbar-toggler {
   border: none;
-  background-color: #7a7a7a;
+  background-color: #fcfcfc;
 }
 
 .navbar-toggler-icon {
@@ -160,7 +160,7 @@ main section h4 {
   padding: 60px 20px;
 }
 main .productos-compra h1 {
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
   color: rgb(65, 30, 3);
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: left;
@@ -239,7 +239,7 @@ main .pro-pre p {
 }
 
 header {
-  background-color: #f0f0f0;
+  background-color: #fcfcfc;
   padding: 10px 0;
   position: sticky;
   top: 0;
@@ -297,10 +297,11 @@ h3 {
   transition: transform 0.3s ease;
 }
 
+/*
 .tarjeta-bienvenida:hover {
   transform: translateY(-5px);
-}
-
+} 
+*/
 .Bienvenida h4 {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -443,7 +444,7 @@ iframe {
   margin: 30px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
   border-radius: 10px;
 }
 
@@ -588,7 +589,7 @@ img: le ponés ancho máximo, que no se pase, y un poco de margen.*/
 }
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #fcfcfc;
   padding: 20px;
 }
 footer .footer-contenedor {
